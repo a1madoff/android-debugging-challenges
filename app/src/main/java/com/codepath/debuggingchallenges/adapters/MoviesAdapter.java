@@ -33,10 +33,10 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
         public ViewHolder(View itemView) {
             super(itemView);
 
-            view = itemView;
-            tvName = itemView.findViewById(R.id.tvTitle);
-            tvRating = itemView.findViewById(R.id.tvRating);
-            ivPoster = itemView.findViewById(R.id.ivPoster);
+            view = (View) itemView;
+            tvName = (TextView) itemView.findViewById(R.id.tvTitle);
+            tvRating = (TextView) itemView.findViewById(R.id.tvRating);
+            ivPoster = (ImageView) itemView.findViewById(R.id.ivPoster);
         }
     }
 
@@ -46,7 +46,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return 0;
+        return movies.size();
     }
 
     @NonNull
