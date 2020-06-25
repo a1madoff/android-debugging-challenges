@@ -17,7 +17,7 @@ public class CurrentDayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_day);
         tvDay = (TextView) findViewById(R.id.tvDay);
-        tvDay.setText(getDayOfMonth());
+        tvDay.setText(Integer.toString(getDayOfMonth()));
     }
 
     private int getDayOfMonth() {
